@@ -1,0 +1,8 @@
+version: "3.9"  # optional since v1.27.0
+services:
+  jupyter:
+    ports:
+      - "8888:8888"
+    image: javiersanzcruza/far-trans:latest
+    volumes:
+      - ./iPythonNotebooks:/notebooks
